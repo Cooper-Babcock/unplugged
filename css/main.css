@@ -86,6 +86,128 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*------------ Base Header- Footer Styles--------------*/
+
+Footer,header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+/*Header styles*/
+header{
+justify-content: center;
+}
+header .content-wrapper{
+justify-content: center;
+align-items: center;
+}
+
+.header-divider{
+
+}
+header nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+header nav ul{
+display: flex;
+justify-content: center;
+}
+
+/*------------ Mobile Style- Homepage--------------*/
+
+.hero-area{
+display: flex;
+flex-flow: row wrap;
+}
+
+Aside{
+display: flex;
+}
+
+aside .form-description{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+aside .form{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+section .content-wrapper{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+section .features{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+article .camping-icon{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+article .sleeping-icon{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+article .food-icon{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+article .outdoor-icon{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+article .facilitator-icon{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+section .reviews{
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/*footer*/
+
+
+footer{
+display:flex;
+flex-flow: row wrap;
+}
+footer .content-wrapper{
+display:flex;
+flex-flow: row wrap;
+}
+footer address{
+justify-content: center;
+align-items: center;
+}
+footer .contact{
+  justify-content: center;
+  align-items: center;
+}
+footer .social{
+  justify-content: center;
+  align-items: center;
+}
+footer .copyright{
+  justify-content: center;
+  align-items: center;
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +382,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
