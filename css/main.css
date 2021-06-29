@@ -321,17 +321,102 @@ footer p{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px){
+  /*Tablet styles here*/
+  .content-wrapper{
+    max-width:640px;
+    margin: 100px 0;
+  }
+  /*Header*/
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  header{
+justify-content: center;
+  }
+  header .content-wrapper {
+        width:640px;
+        justify-content: center;
+    }
 
+    header nav {
+        width: 128px;
+    }
+
+    header nav ul {
+justify-content: center;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    /* Hero Area */
+
+    /* Aside */
+    aside .content-wrapper {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        flex-flow: row-wrap;
+
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width: 640px;
+        margin: 0;
+    }
+
+    /* Features */
+
+    .features article {
+      display: flex;
+      justify-content: center;
+      flex-flow: row-wrap;
+      padding: 125px;
+      flex-basis: auto;
+    }
+
+    .features .features-item-description {
+        width: 640px;
+    }
+
+    /* Reviews */
+    .reviews article {
+      display: flex;
+      justify-content: center;
+      flex-flow: row-wrap;
+      padding:50px;
+    }
+
+    .reviews article div {
+        width: 640px;
+    }
+
+    /* Footer */
+    footer .content-wrapper {
+        width: 445px;
+        margin: 100px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      flex-flow: row-wrap;
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+        padding: 125px;
+    }
+
+    footer .copyright {
+        width: 200px;
+    }
+
+}
+@media only screen and (mind-width:1200px){
+  /*Desktop styles here*/
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
