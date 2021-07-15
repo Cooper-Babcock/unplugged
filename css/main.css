@@ -96,6 +96,7 @@ body {
 font-family: 'Open Sans', sans-serif;
 font-size: 1em;
 text-align: left;
+color:#e2e3ed;
 }
 
 ul,
@@ -111,6 +112,7 @@ a {
 h2 {
  font-family: 'Poppins', sans-serif;
 font-size: 1.5625em;
+font-weight:500;
 }
 
 h3,
@@ -144,51 +146,110 @@ font-style: normal;
 /*------------ Base Header- Footer Styles--------------*/
 
 Footer,header{
+  background-color: #202322;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 }
 /*Header styles*/
 header{
-justify-content: center;
-padding: 15px 0;
+  padding: 15px 0;
 }
+
 header .content-wrapper{
-justify-content: center;
-align-items: center;
-margin:0;
+  margin:0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .header-divider{
-width:100%;
+  width:100%;
+  margin: 10px 0 20px 0;
+  background: #3a3a3a;
+  height: 1px;
 }
+
 header nav{
+  width:60%;
+  font-size: 1.125em;
+  font-weight: 700;
   display:flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width:60%;
+  text-transform:uppercase;
+}
 
-}
 header nav ul{
-display: flex;
-justify-content: center;
-width: 50%;
-padding:15px 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
+
+header nav ul li{
+  font-size: 1.125em;
+}
+
+footer{
+  text-align: center;
+  flex-direction: column;
+}
+
+footer .content-wrapper{
+  width:55%;
+  margin: 50px 0;
+}
+
+footer .contact{
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright{
+  margin: 20px 0;
+}
+
+footer p{
+  margin:0;
 
 /*------------ Mobile Style- Homepage--------------*/
 
+/* hero area*/
+
 .hero-area{
-display: flex;
-flex-flow: row wrap;
-padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-Aside{
+.hero-area h1{
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Aside*/
+
+aside{
 display: flex;
+background-color: #527158;
+justify-content: center;
+align-items: center;
 }
 
 aside .form-description{
@@ -198,26 +259,58 @@ aside .form-description{
   padding: 25px 10px;
 }
 aside .form{
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 25px 10px;
+  margin-top: 30px;
 }
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Features */
+
 section .content-wrapper{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   width:80%;
 }
-section .features{
+
+ .features{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   width:50%;
   padding: 50px 10px;
 }
-p .featired{
+.features p{
+  text-align: center;
   margin:0
+}
+
+.features h2{
+  margin-bottom: 60px;
+}
+.features p {
+  text-align: center;
+  margin: 0;
 }
 
 article .camping-icon{
@@ -245,48 +338,25 @@ article .facilitator-icon{
   align-items: center;
   flex-flow: row wrap;
 }
-section .reviews{
+
+/*reviews*/
+
+ .reviews{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 20px 10px;
+  background-color: #2a423a;
 }
-h3 .reviews{
-  width:50%;
-  padding: 50px 10px;
+.reviews h2{
+  margin-bottom: 40px;
+  line-height: 1;
 }
-/*footer*/
 
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
 
-footer{
-display:flex;
-flex-flow: row wrap;
-padding: 50px 0;
-}
-footer .content-wrapper{
-display:flex;
-flex-flow: row wrap;
-width:55%;
-}
-footer address{
-justify-content: center;
-align-items: center;
-}
-footer .contact{
-  justify-content: center;
-  align-items: center;
-}
-footer .social{
-  justify-content: center;
-  align-items: center;
-}
-footer .copyright{
-  justify-content: center;
-  align-items: center;
-}
-footer p{
-  margin:0;
-}
 
 /* ==========================================================================
    Helper classes
@@ -397,7 +467,7 @@ justify-content: center;
     }
 
     header nav ul {
-justify-content: center;
+        justify-content: center;
     }
 
     .header-divider {
